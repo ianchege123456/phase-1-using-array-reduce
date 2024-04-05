@@ -1,0 +1,16 @@
+// Sample array of batteries
+const batteries = [
+    { id: 1, type: 'AA', amount: 4 },
+    { id: 2, type: 'AAA', amount: 2 },
+    { id: 3, type: 'AA', amount: 3 },
+    { id: 4, type: 'AAA', amount: 1 }
+  ];
+  
+  // Reducer function to calculate the total sum of batteries
+  const reducer = (accumulator, currentValue) => accumulator + currentValue.amount;
+  
+  // Calculate the total sum of batteries using reduce method
+  const totalBatteries = batteries.reduce(reducer, 0);
+  
+  module.exports = totalBatteries;
+  
